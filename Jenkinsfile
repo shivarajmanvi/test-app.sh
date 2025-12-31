@@ -11,14 +11,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building application"
-                sh 'chmod +x test-app.sh'
+                sh 'chmod +x app.sh'
             }
         }
 
         stage('Test') {
             steps {
                 echo "Running tests"
-                sh './test-app.sh'
+                sh './app.sh'
             }
         }
 
